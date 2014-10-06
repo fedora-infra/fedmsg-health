@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="https://apps.fedoraproject.org/datagrepper/static/favicon.png">
+
+<title>fedmsg health</title>
+
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+.graph {
+  width: 320px;
+  height: 115px;
+}
+</style>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">health</a></li>
+      <li><a href="https://admin.fedoraproject.org/collectd/">collectd</a></li>
+      <li><a href="http://fedmsg.com">docs</a></li>
+    </ul>
+    <h3 class="text-muted">fedmsg health</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p class="lead text-center">
+      The relative health of a number of fedmsg daemons in Fedora Infrastructure.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 text-center"> <h4>Number In</h4> </div>
+    <div class="col-md-4 text-center"> <h4>Number Out</h4> </div>
+    <div class="col-md-4 text-center"> <h4>Backlog</h4> </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>datanommer</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=Nommer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=Nommer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=queue_length;type_instance=Nommer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>gateway</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=gateway;type=gauge;type_instance=GatewayConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=gateway;type=gauge;type_instance=GatewayConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=gateway;type=queue_length;type_instance=GatewayConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>relay</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=relay;type=gauge;type_instance=RelayConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=relay;type=gauge;type_instance=RelayConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=busgateway01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=relay;type=queue_length;type_instance=RelayConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>bugzilla2fedmsg</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=bugzilla2fedmsg01.phx2.fedoraproject.org;plugin=moksha;plugin_instance=hub;type=gauge;type_instance=BugzillaConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=bugzilla2fedmsg01.phx2.fedoraproject.org;plugin=moksha;plugin_instance=hub;type=gauge;type_instance=BugzillaConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=bugzilla2fedmsg01.phx2.fedoraproject.org;plugin=moksha;plugin_instance=hub;type=queue_length;type_instance=BugzillaConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>fmn</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=notifs-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=FMNConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=notifs-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=FMNConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=notifs-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=queue_length;type_instance=FMNConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>badges</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=badges-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=FedoraBadgesConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=badges-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=FedoraBadgesConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=badges-backend01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=queue_length;type_instance=FedoraBadgesConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>irc</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=value01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=irc;type=gauge;type_instance=IRCBotConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=value01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=irc;type=gauge;type_instance=IRCBotConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=value01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=irc;type=queue_length;type_instance=IRCBotConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>genacls</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=pkgs01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=GenACLsConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=pkgs01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=GenACLsConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=pkgs01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=queue_length;type_instance=GenACLsConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4>summershum</h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=summershum01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=SummerShumConsumer_in;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=summershum01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=gauge;type_instance=SummerShumConsumer_out;begin=-86400">
+    </div>
+    <div class="col-md-4">
+      <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=summershum01.phx2.fedoraproject.org;plugin=fedmsg;plugin_instance=hub;type=queue_length;type_instance=SummerShumConsumer_backlog;begin=-86400">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
