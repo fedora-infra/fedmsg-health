@@ -7,7 +7,7 @@ timespans = OrderedDict([
     ('day', 86400),
     ('week', 604800),
     ('month', 2628000),
-    ('year', 3.15 * 10**7),
+    ('year', 365 * 86400),
 ])
 
 parameters = [
