@@ -71,10 +71,16 @@ parameters = [
 if __name__ == '__main__':
     names = timespans.keys()
     for name in names:
+        html = Template(filename="template.html").render(
+            name=name,
+            names=names,
+            span=timespans[name],
+            parameters=parameters
+        )
+
         with open('build/fedmsg-health-%s.html' % name, 'w') as f:
-            f.write(Template(filename="template.html").render(
-                name=name,
-                names=names,
-                span=timespans[name],
-                parameters=parameters
-            ))
+            f.write(html)
+
+        if name == 'day':
+            with open('build/fedmsg-health.html', 'w') as f:
+                f.write(html)
