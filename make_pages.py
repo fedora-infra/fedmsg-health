@@ -48,6 +48,12 @@ parameters = [
         'host': 'badges-backend01.phx2.fedoraproject.org',
         'title': 'badges',
     }, {
+        'consumer': 'BugzillaTicketFiler',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'hotness01.phx2.fedoraproject.org',
+        'title': 'the-new-hotness',
+    }, {
         'consumer': 'IRCBotConsumer',
         'instance': 'irc',
         'plugin': 'fedmsg',
@@ -65,6 +71,12 @@ parameters = [
         'plugin': 'fedmsg',
         'host': 'summershum01.phx2.fedoraproject.org',
         'title': 'summershum',
+    }, {
+        'consumer': 'KojiConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'fedimg01.phx2.fedoraproject.org',
+        'title': 'fedimg (cloud uploader)',
     },
 ]
 
