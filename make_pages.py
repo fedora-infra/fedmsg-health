@@ -3,6 +3,7 @@ from mako.template import Template
 from collections import OrderedDict
 
 timespans = OrderedDict([
+    ('now', 900),
     ('hour', 3600),
     ('day', 86400),
     ('week', 604800),
