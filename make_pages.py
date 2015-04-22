@@ -64,7 +64,7 @@ parameters = [
         'consumer': 'GenACLsConsumer',
         'instance': 'hub',
         'plugin': 'fedmsg',
-        'host': 'pkgs01.phx2.fedoraproject.org',
+        'host': 'pkgs02.phx2.fedoraproject.org',
         'title': 'genacls',
     }, {
         'consumer': 'SummerShumConsumer',
