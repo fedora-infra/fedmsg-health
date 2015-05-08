@@ -47,9 +47,10 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4 text-center"> <h4>Number In</h4> </div>
-    <div class="col-md-4 text-center"> <h4>Number Out</h4> </div>
-    <div class="col-md-4 text-center"> <h4>Backlog</h4> </div>
+    <div class="col-md-3 text-center"> <h4>Number In</h4> </div>
+    <div class="col-md-3 text-center"> <h4>Number Out</h4> </div>
+    <div class="col-md-3 text-center"> <h4>Backlog</h4> </div>
+    <div class="col-md-3 text-center"> <h4>Exceptions</h4> </div>
   </div>
 
   % for params in parameters:
@@ -58,19 +59,24 @@
       <h4><a name="${params['title']}" href="#${params['title']}">${params['title']}</h4>
   </div></div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_in;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_in;begin=-${span}">
       </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_out;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_out;begin=-${span}">
       </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_backlog;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_backlog;begin=-${span}">
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_exceptions;begin=-${span}">
+        <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_exceptions;begin=-${span}">
       </a>
     </div>
   </div>
