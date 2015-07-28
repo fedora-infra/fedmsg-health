@@ -14,8 +14,8 @@
 
 <style type="text/css">
 .graph {
-  width: 320px;
-  height: 115px;
+  width: 290px;
+  height: 100px;
 }
 
 .container{
@@ -53,24 +53,24 @@
   </div></div>
   <div class="row">
     <div class="col-md-3 text-center">
-      <h5>Number In</h5>
+      <h5>Number In (#M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_in;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_in;begin=-${span}">
       </a>
     </div>
     <div class="col-md-3 text-center">
-      <h5>Number Out</h5>
+      <h5>Number Out (#M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_out;begin=-${span}"> <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_out;begin=-${span}">
       </a>
     </div>
     <div class="col-md-3 text-center">
-      <h5>Backlog</h5>
+      <h5>Backlog (#M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_backlog;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_backlog;begin=-${span}">
       </a>
     </div>
     <div class="col-md-3 text-center">
-      <h5>Exceptions</h5>
+      <h5>Exceptions (#E)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=queue_length;type_instance=${params['consumer']}_exceptions;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=gauge;type_instance=${params['consumer']}_exceptions;begin=-${span}">
       </a>
@@ -78,19 +78,19 @@
   </div>
   <div class="row">
     <div class="col-md-4 text-center">
-      <h5>Average Time / Message</h5>
+      <h5>Average Time / Message (ms/M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_avg;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_avg;begin=-${span}">
       </a>
     </div>
     <div class="col-md-4 text-center">
-      <h5>Maximum Time / Message</h5>
+      <h5>Maximum Time / Message (ms/M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_max;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_max;begin=-${span}">
       </a>
     </div>
     <div class="col-md-4 text-center">
-      <h5>Minimum Time / Message</h5>
+      <h5>Minimum Time / Message (ms/M)</h5>
       <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_min;begin=-${span}">
         <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=${params['host']};plugin=${params['plugin']};plugin_instance=${params['instance']};type=response_time;type_instance=${params['consumer']}_min;begin=-${span}">
       </a>
