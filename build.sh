@@ -1,4 +1,7 @@
 #!/bin/bash
 
 python make_pages.py
-scp build/*.html threebean.org:~/webapps/static/.
+
+cp build/*.html ~/scratch/threebean.org/.
+
+~/.virtualenvs/awscli/bin/aws s3 sync ~/scratch/threebean.org s3://threebean.org
