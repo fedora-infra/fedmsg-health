@@ -49,6 +49,12 @@ parameters = [
         'host': 'badges-backend01.phx2.fedoraproject.org',
         'title': 'badges',
     }, {
+        'consumer': 'Masher',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'bodhi-backend01.phx2.fedoraproject.org',
+        'title': 'bodhi-masher',
+    }, {
         'consumer': 'BugzillaTicketFiler',
         'instance': 'hub',
         'plugin': 'fedmsg',
