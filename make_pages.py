@@ -55,6 +55,12 @@ parameters = [
         'host': 'bodhi-backend01.phx2.fedoraproject.org',
         'title': 'bodhi-masher',
     }, {
+        'consumer': 'UpdatesHandler',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'bodhi-backend02.phx2.fedoraproject.org',
+        'title': 'bodhi-updates-handler',
+    }, {
         'consumer': 'BugzillaTicketFiler',
         'instance': 'hub',
         'plugin': 'fedmsg',
