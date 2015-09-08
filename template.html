@@ -46,6 +46,37 @@
     </div>
   </div>
 
+  <hr/>
+  <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
+      <h4><a name="db-datanommer" href="#db-datanommer">db-datanommer</a></h4>
+  </div></div>
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <h5>System Load</h5>
+      <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=load;type=load;begin=-${span}">
+        <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=load;type=load;begin=-${span}">
+      </a>
+    </div>
+    <div class="col-md-3 text-center">
+      <h5>Disk Usage (root)</h5>
+      <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=df;plugin_instance=root;type=df_complex;begin=-${span}">
+        <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=df;plugin_instance=root;type=df_complex;begin=-${span}">
+      </a>
+    </div>
+    <div class="col-md-3 text-center">
+      <h5>PG Connections</h5>
+      <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=pg_conns;type=current_connections;type_instance=datanommer;begin=-${span}">
+        <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=pg_conns;type=current_connections;type_instance=datanommer;begin=-${span}">
+      </a>
+    </div>
+    <div class="col-md-3 text-center">
+      <h5>Process State</h5>
+      <a target="_blank" href="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=processes;type=ps_state;begin=-${span}">
+        <img class="graph center-block" src="https://admin.fedoraproject.org/collectd/bin/graph.cgi?hostname=db-datanommer02.phx2.fedoraproject.org;plugin=processes;type=ps_state;begin=-${span}">
+      </a>
+    </div>
+  </div>
+
   % for params in parameters:
   <hr/>
   <div class="row"><div class="col-md-4 col-md-offset-4 text-center">
