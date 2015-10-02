@@ -90,6 +90,18 @@ parameters = [
         'plugin': 'fedmsg',
         'host': 'fedimg01.phx2.fedoraproject.org',
         'title': 'fedimg (cloud uploader)',
+    }, {
+        'consumer': 'AutoCloudConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'autocloud-backend-libvirt.phx2.fedoraproject.org',
+        'title': 'autocloud-backend-libvirt',
+    }, {
+        'consumer': 'AutoCloudConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'autocloud-backend-vbox.phx2.fedoraproject.org',
+        'title': 'autocloud-backend-vbox',
     },
 ]
 
