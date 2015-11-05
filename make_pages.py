@@ -37,6 +37,12 @@ parameters = [
         'host': 'bugzilla2fedmsg01.phx2.fedoraproject.org',
         'title': 'bugzilla2fedmsg',
     }, {
+        'consumer': 'StatsConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'statscache-backend01.phx2.fedoraproject.org',
+        'title': 'statscache',
+    }, {
         'consumer': 'FMNConsumer',
         'instance': 'hub',
         'plugin': 'fedmsg',
