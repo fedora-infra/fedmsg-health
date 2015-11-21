@@ -37,6 +37,12 @@ parameters = [
         'host': 'bugzilla2fedmsg01.phx2.fedoraproject.org',
         'title': 'bugzilla2fedmsg',
     }, {
+        'consumer': 'CacheInvalidator',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'packages03.phx2.fedoraproject.org',
+        'title': 'fedora-packages',
+    }, {
         'consumer': 'StatsConsumer',
         'instance': 'hub',
         'plugin': 'fedmsg',
