@@ -114,6 +114,12 @@ parameters = [
         'plugin': 'fedmsg',
         'host': 'autocloud-backend-vbox.phx2.fedoraproject.org',
         'title': 'autocloud-backend-vbox',
+    }, {
+        'consumer': 'BugyouConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'bugyou01.phx2.fedoraproject.org',
+        'title': 'bugyou',
     },
 ]
 
