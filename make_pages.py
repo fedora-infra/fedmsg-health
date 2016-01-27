@@ -120,6 +120,12 @@ parameters = [
         'plugin': 'fedmsg',
         'host': 'bugyou01.phx2.fedoraproject.org',
         'title': 'bugyou',
+    }, {
+        'consumer': 'PDCUpdater',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'pdc-updater01.phx2.fedoraproject.org',
+        'title': 'pdc-updater',
     },
 ]
 
