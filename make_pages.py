@@ -126,6 +126,12 @@ parameters = [
         'plugin': 'fedmsg',
         'host': 'pdc-updater01.phx2.fedoraproject.org',
         'title': 'pdc-updater',
+    }, {
+        'consumer': 'FasClientConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'batcave01.phx2.fedoraproject.org',
+        'title': 'fas_client',
     },
 ]
 
