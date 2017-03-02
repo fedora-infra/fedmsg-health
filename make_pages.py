@@ -125,7 +125,13 @@ parameters = [
         'instance': 'hub',
         'plugin': 'fedmsg',
         'host': 'pdc-backend01.phx2.fedoraproject.org',
-        'title': 'pdc-updater',
+        'title': 'pdc-updater-composes',
+    }, {
+        'consumer': 'PDCUpdater',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'pdc-backend02.phx2.fedoraproject.org',
+        'title': 'pdc-updater-everything-else',
     }, {
         'consumer': 'FasClientConsumer',
         'instance': 'hub',
