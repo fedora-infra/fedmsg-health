@@ -133,6 +133,12 @@ parameters = [
         'host': 'pdc-backend02.phx2.fedoraproject.org',
         'title': 'pdc-updater-everything-else',
     }, {
+        'consumer': 'MBSConsumer',
+        'instance': 'hub',
+        'plugin': 'fedmsg',
+        'host': 'mbs-backend01.phx2.fedoraproject.org',
+        'title': 'mbs-backend',
+    }, {
         'consumer': 'FasClientConsumer',
         'instance': 'hub',
         'plugin': 'fedmsg',
